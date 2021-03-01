@@ -1,0 +1,82 @@
+/********** The magic border-box property! **********/
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans;
+}
+
+h1 {
+  text-align: center;
+}
+
+/********** General classes **********/
+.menu-title {
+  position: absolute;
+  top: -15px;
+  right: 0;
+}
+
+span.fish, span.beef, span.chicken {
+  border-bottom: 1px solid black; 
+  border-left: 1px solid black;
+}
+
+span.fish {
+  background: #ffbf00;
+  padding: 5px;
+}
+span.beef {
+  background: #cf142b;
+  padding: 5px;
+}
+span.chicken {
+  background: salmon;
+  padding: 5px;
+}
+
+.space {
+  padding: 10px;
+  border: 1px solid black;
+  position: relative;
+  background-color: #ececec;
+}
+
+p {
+  margin: 35px 0 0 0;
+}
+
+/********** Col container **********/
+.row {
+  width: 100%;
+}
+
+/********** Desktop **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    width: 33.33%;
+    float: left;
+    padding: 10px;
+  }
+}
+
+/********** Tablet **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+    padding: 10px;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+/********** Mobile **********/
+@media (max-width: 767px) {
+  .col-sm-12 {
+    width: 100%;
+    float: left;
+    padding: 10px;
+  }
+}
